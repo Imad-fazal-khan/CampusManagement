@@ -1,0 +1,265 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StudentProfile"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_class_id"
+            android:hint="Class"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_regno_id"
+            android:hint="Registeration Number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_section_id"
+            android:hint="Section"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_name_id"
+            android:hint="Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:inputType="date"
+            android:id="@+id/prof_dateofbirth_id"
+            android:hint="Date of Birth"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_gender_id"
+            android:hint="Gender"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_placeofbirth_id"
+            android:hint="Place of Birth"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_religion_id"
+            android:hint="Religion"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_address_id"
+            android:hint="Address"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:id="@+id/prof_phone_id"
+            android:hint="Phone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_fname_id"
+            android:hint="Father's Name"/>
+
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_fnic_id"
+            android:hint="CNIC"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_mname_id"
+            android:hint="Mother's Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_mnic_id"
+            android:hint="CNIC"/>
+        -->
+        <!--
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/round_cornor_edittext"
+                android:padding="6dp"
+                android:id="@+id/std_reg_par_address_id"
+                android:hint="Address"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/prof_foccupation_id"
+            android:hint="Father's Occupation"/>
+
+<!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_designation_id"
+            android:hint="Designation"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_addofwork_id"
+            android:hint="Address of Work Place"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_first_language_id"
+            android:hint="First Language"/>
+-->
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:id="@+id/prof_par_nationality_id"
+            android:hint="Nationality"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Update"
+            android:id="@+id/update_student_id"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_cornor_button"/>
+    </LinearLayout>
+</ScrollView>

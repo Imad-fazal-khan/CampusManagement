@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateEmployee">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:id="@+id/update_emp_name_id"
+            android:hint="Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:singleLine="true"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/update_emp_email_id"
+            android:hint="Email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:id="@+id/update_emp_pass1_id"
+            android:hint="Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:password="true"
+            android:id="@+id/update_emp_pass2_id"
+            android:hint="Conform Password"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Priviliges"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="left">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Registeration"
+            android:id="@+id/update_access_registeration_id"
+            android:layout_marginLeft="16dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access expenses"
+            android:id="@+id/update_access_expenses_id"
+            android:layout_marginLeft="16dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Fee"
+            android:id="@+id/update_access_fee_id"
+            android:layout_marginLeft="16dp" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_register_employee_id"
+            android:text="Update"
+            android:padding="6dp"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_cornor_button"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_delete_employee_id"
+        android:text="Delete"
+        android:padding="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/round_cornor_button"/>
+</LinearLayout>

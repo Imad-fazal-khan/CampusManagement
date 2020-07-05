@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "985546126644",
+    "firebase_url": "https://campusmanagement-e49f4.firebaseio.com",
+    "project_id": "campusmanagement-e49f4",
+    "storage_bucket": "campusmanagement-e49f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985546126644:android:37efc9b8f2794218",
+        "android_client_info": {
+          "package_name": "com.campus.management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985546126644-tm079of350pdjnjs5l5i6a9l2cikhidj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.campus.management",
+            "certificate_hash": "a704fe12f81c8bebd6bc81c9a87c7e962f5385a9"
+          }
+        },
+        {
+          "client_id": "985546126644-hf2rlek2klpnufeej9coc934aebt7atd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeVULNy6E8P4hDR0_GivzKKQ8lf98AsAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985546126644-hf2rlek2klpnufeej9coc934aebt7atd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:background="@color/colorfacebook"
+    android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text="Student RegNo"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/recycler_student_regno_id"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_weight="1"
+            android:text="Student Name"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/recycler_student_name_id"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fathers Name"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="0.5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/recycler_student_fname_id"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/recycler_student_class_id"/>
+
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class"
+        android:layout_marginTop="0.5dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorBlack"/>
+-->
+
+</LinearLayout>

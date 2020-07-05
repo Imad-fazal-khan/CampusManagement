@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/admin_icon1"
+            android:title="Admin" />
+        <item
+            android:id="@+id/nav_reg"
+            android:icon="@drawable/study_icon1"
+            android:title="Student Registration" />
+        <item
+            android:id="@+id/nav_fee"
+            android:icon="@drawable/fee_icon1"
+            android:title="Fee" />
+        <item
+            android:id="@+id/nav_expense"
+            android:icon="@drawable/expense_icon1"
+            android:title="Expense" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/admin_icon1"
+            android:title="Log Out" />
+    </group>
+
+</menu>

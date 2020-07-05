@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StudentRegisteration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Student Registration"
+        android:textSize="20dp"
+        android:id="@+id/student_reg_toolbar_id"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorfacebook"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible"
+        android:id="@+id/student_layoutt1">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/register_student_switch_id"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Register Students"
+                    android:padding="16dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/study_icon1"
+                    android:padding="16dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/register_student_switch_id"
+            android:id="@+id/view_student_switch_id"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="View Students"
+                    android:padding="16dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/study_icon1"
+                    android:padding="16dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/registeration_search_layout"
+        android:orientation="vertical">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="16dp"
+            style="@style/spinner_style"
+            android:layout_marginRight="16dp"
+            android:id="@+id/select_class_spinner_id"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="View Students"
+            android:id="@+id/student_search_button_id"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_cornor_button"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/student_layoutt2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/std_reg_name_id"
+            android:hint="Name"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        style="@style/spinner_style"
+        android:id="@+id/std_reg_class_id"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:id="@+id/std_reg_regno_id"
+            android:hint="Registeration Number"/>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp" android:layout_marginBottom="16dp"
+        android:singleLine="true"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_section_id"
+        android:hint="Section"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:editable="false"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:id="@+id/std_reg_dateofbirth_id"
+        android:hint="Date of Birth"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        style="@style/spinner_style"
+        android:id="@+id/std_reg_gender_id"
+        />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            style="@style/spinner_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/std_reg_religion_id"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_placeofbirth_id"
+        android:hint="Place of Birth"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_address_id"
+        android:hint="Address"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:id="@+id/std_reg_phone_id"
+        android:hint="Phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_fname_id"
+        android:hint="Father's Name"/>
+
+<!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:id="@+id/std_reg_fnic_id"
+        android:hint="CNIC"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_mname_id"
+        android:hint="Mother's Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:id="@+id/std_reg_mnic_id"
+        android:hint="CNIC"/>-->
+<!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_par_address_id"
+        android:hint="Address"/>-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:id="@+id/std_reg_foccupation_id"
+        android:hint="Father's Occupation"/>
+
+<!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_designation_id"
+        android:hint="Designation"/>
+-->
+
+<!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_addofwork_id"
+        android:hint="Address of Work Place"/>
+-->
+
+<!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:id="@+id/std_reg_first_language_id"
+        android:hint="First Language"/>
+-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:id="@+id/std_reg_par_nationality_id"
+        android:hint="Nationality"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Register"
+        android:id="@+id/register_student_id"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/round_cornor_button"/>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

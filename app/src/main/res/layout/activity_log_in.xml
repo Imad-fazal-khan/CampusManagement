@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".LogIn">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="16dp"
+        style="@style/spinner_style"
+        android:layout_marginRight="16dp"
+        android:id="@+id/login_campus_spinner_id"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/login_email_id"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="6dp"
+        android:password="true"
+        android:singleLine="true"
+        android:id="@+id/login_password_id"
+        android:hint="Password"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Log In"
+        android:id="@+id/login_id"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/round_cornor_button"/>
+
+</LinearLayout>

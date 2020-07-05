@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeeStructure">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Admin"
+        android:id="@+id/temp"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorfacebook"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_add_fee_structure_id"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Add Fee Structure"
+                android:padding="16dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/fee_icon1"
+                android:padding="16dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/admin_add_fee_structure_id"
+        android:id="@+id/admin_view_fee_structure_id"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="View Fee Structure"
+                android:padding="16dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/fee_icon1"
+                android:padding="16dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/fee_structure_add_layout_id"
+        android:orientation="vertical">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/structure_classes_spinner_id"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:singleLine="true"
+            android:id="@+id/structure_regis_fee_id"
+            android:hint="Registration fee"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:id="@+id/structure_admission_charges_id"
+            android:hint="Admission Charges"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:id="@+id/structure_security_id"
+            android:hint="Security Charges"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_cornor_edittext"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:id="@+id/structure_tution_fee_id"
+            android:hint="Monthly Tution Fee"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Done"
+            android:id="@+id/structure_done_id"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_cornor_button"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:id="@+id/fee_structure_recycler_view_id">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FeeManager">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Fee"
+        android:textSize="20dp"
+        android:id="@+id/fee_toolbar_id"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorfacebook"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:id="@+id/fee_class_id"
+        android:hint="Class"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:id="@+id/fee_name_id"
+        android:hint="Name"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:id="@+id/fee_fname_id"
+        android:hint="Father's Name"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="10dp"
+        android:editable="false"
+        android:clickable="true"
+        android:focusable="false"
+        android:singleLine="true"
+        android:id="@+id/fee_date_id"
+        android:hint="Date"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/spinner_style"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/fee_manager_spinner_id"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:id="@+id/fee_amount_id"
+        android:hint="Amount"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_cornor_edittext"
+        android:padding="10dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:id="@+id/fee_discount_id"
+        android:hint="Discount"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Submit Fee"
+        android:id="@+id/fee_submitfee_id"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/round_cornor_button"/>
+</LinearLayout>
+</LinearLayout>

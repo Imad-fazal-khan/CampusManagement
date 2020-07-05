@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ViewFee">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Fee"
+        android:textSize="20dp"
+        android:id="@+id/viewfee_header_tv_id"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorfacebook"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:visibility="gone"
+        android:id="@+id/fee_header_layout"
+        android:background="@color/colorfacebook"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorWhite"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_weight="1"
+            android:text="Class"
+            android:background="@color/colorfacebook"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fee Type"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorfacebook"
+            android:layout_marginBottom="0.5dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/colorfacebook"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_margin="16dp">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/spinner_style"
+                android:id="@+id/ed_monthly_fee_id"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:layout_toRightOf="@+id/ed_monthly_fee_id"
+                android:id="@+id/fee_report_monthly_id"
+                android:layout_gravity="center"
+                android:padding="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/round_cornor_button"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_margin="16dp">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/spinner_style"
+                android:id="@+id/ed_annual_fee_id"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/fee_report_annual_id"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/round_cornor_button"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="All Fees"
+            android:id="@+id/fee_report_all_id"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_cornor_button"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/fee_header_layout"
+        android:id="@+id/fee_recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

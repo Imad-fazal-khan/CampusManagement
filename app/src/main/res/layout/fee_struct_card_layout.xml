@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/colorfacebook"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="8dp"
+    android:singleLine="true"
+    android:layout_marginRight="0.5dp"
+    android:layout_marginBottom="0.5dp"
+    android:text="Class"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:paddingRight="5dp"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="0.5dp"
+    android:textColor="@color/colorBlack"
+    android:id="@+id/struct_class_id"/>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:background="@color/colorfacebook"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text="Registration Fee"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text=""
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/struct_reg_fee_id"/>
+
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:background="@color/colorfacebook"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text="Admission Fee"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text=""
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/struct_adm_charges_id"/>
+
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:background="@color/colorfacebook"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text="Security Charges"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text=""
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/struct_security_charges_id"/>
+
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:background="@color/colorfacebook"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text="Monthly Tution Fee"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:text=""
+            android:background="@color/colorWhite"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/struct_monthly_fee_id"/>
+
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:background="@color/colorfacebook"/>
+</LinearLayout>
+</android.support.v7.widget.CardView>

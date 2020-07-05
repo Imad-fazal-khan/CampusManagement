@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSelection">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Fee"
+        android:textSize="20dp"
+        android:id="@+id/selection_toolbar_id"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorfacebook"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selection_add_fee_id"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Collect Fee"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/fee_icon1" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selection_view_fee_id"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="View Fee"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/fee_icon1" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selection_view_feestatus_id"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Fee Status"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/fee_icon1" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/add_fee_layout"
+        android:orientation="vertical">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            style="@style/spinner_style"
+            android:layout_marginRight="16dp"
+            android:id="@+id/selection_spinner_id"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="View Students"
+            android:id="@+id/selection_search_id"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_cornor_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:id="@+id/selection_hearder_id"
+        android:background="@color/colorfacebook"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_weight="1"
+            android:text="Reg No"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorWhite"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:background="@color/colorfacebook"
+            android:layout_marginTop="0.5dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Father's Name"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorfacebook"
+            android:layout_marginBottom="0.5dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/colorfacebook"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/selection_recycler_id"
+        android:layout_below="@+id/selection_hearder_id">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
